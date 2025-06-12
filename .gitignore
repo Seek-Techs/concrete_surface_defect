@@ -1,0 +1,37 @@
+# Python virtual environments
+/env/
+/.venv/
+/venv/
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+# If you want to ignore all notebook checkpoints
+# If you only want to keep certain notebooks, you can ignore all and then explicitly un-ignore
+# e.g., *.ipynb # to ignore all notebooks
+# !surface_detection.ipynb # to un-ignore a specific one
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Trained models (large derived artifacts)
+concrete_surface_model.h5
+*.h5 # To ignore all HDF5 files (common for Keras models)
+*.keras # If you use Keras's native format
+
+# Temporary / archive files
+*.zip
+*.rar
+*.tar.gz
+*.tmp
+*~
+
+# Operating system files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Data directories (if they are very large and not essential to commit)
+/concrete_surface/ 
+*concrete-crack-image-detection.ipynb
+*notepad.txt
+*streamlit_app.py
