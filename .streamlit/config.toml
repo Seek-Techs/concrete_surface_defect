@@ -1,0 +1,4 @@
+[runtime]
+# Choose a Python version that tensorflow==2.19.0 supports
+# Example: Python 3.11
+python_version = "3.11"

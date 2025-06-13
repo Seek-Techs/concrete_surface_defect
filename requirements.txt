@@ -1,10 +1,10 @@
 # Core libraries for Concrete Surface Defect Classifier Streamlit App
 streamlit==1.36.0
 tensorflow==2.19.0
-numpy==<version_you_used>  # e.g., numpy==1.26.4
-Pillow==<version_you_used> # e.g., Pillow==10.3.0
-scikit-image==<version_you_used> # e.g., scikit-image==0.23.0
-scikit-learn==<version_you_used> # e.g., scikit-learn==1.4.2
+numpy
+Pillow
+scikit-image
+scikit-learn
 
 # tensorboard-data-server is typically pulled by tensorflow, can be omitted unless specific version needed
 # tensorboard-data-server==0.7.2
