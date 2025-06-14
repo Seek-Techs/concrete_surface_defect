@@ -14,11 +14,6 @@
 __pycache__/
 *.pyc
 
-# Trained models (large derived artifacts)
-concrete_surface_model.h5
-*.h5 # To ignore all HDF5 files (common for Keras models)
-*.keras # If you use Keras's native format
-
 # Temporary / archive files
 *.zip
 *.rar
