@@ -60,6 +60,13 @@ def predict(model, img):
         predicted_class (str): The human-readable predicted class name.
         confidence (int): The confidence percentage for the predicted class.
     """
+
+    # --- IMPORTANT: Convert image to RGB to ensure 3 channels ---
+    # This handles RGBA (4 channels) or grayscale (1 channel) images,
+    # converting them to 3 channels (RGB) as expected by the model.
+    if img.mode != 'RGB':
+        img = img.convert('RGB')
+        
     # Convert PIL Image to NumPy array
     img_array = np.array(img)
     
