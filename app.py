@@ -6,6 +6,12 @@ from PIL import Image
 import os
 import json # Import json to potentially load history
 
+# --- TensorFlow Configuration to Disable XLA ---
+# This line disables XLA's JIT compilation, which often resolves tf2xla errors
+tf.config.optimizer.set_jit(False) 
+# Optional: If you suspect GPU issues, you can explicitly set visible devices to CPU
+# tf.config.set_visible_devices([], 'GPU') 
+
 # --- Streamlit Page Configuration (MUST BE FIRST Streamlit command) ---
 st.set_page_config(
     page_title="Concrete Surface Defect Classifier",
